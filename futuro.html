@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Futuro — Promessas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="brushstrokes"></canvas>
+  <canvas id="stars"></canvas>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html"><em>Para a minha noite estrelada...</em></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">Nossa História</a></li>
+        <li><a href="momentos.html">Momentos</a></li>
+        <li><a href="futuro.html">Futuro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container future-page">
+        <h1 class="title-decor glow">Promessas ✨</h1>
+    <p class="lead">Pequenas promessas para todos os dias.</p>
+
+    <div class="promises">
+      <article class="promise">
+        <h3>Estar sempre aqui</h3>
+        <p>Prometo que estarei aqui por você, que serei sua companheira de vida, 
+          sua melhor amiga. Quero ser para você a âncora que você é para mim: 
+          o seu ponto de equilíbrio, seu porto seguro nas tempestades e a
+           certeza de que você nunca estará só.</p>
+      </article>
+
+      <article class="promise">
+        <h3>Lar</h3>
+        <p>Quero formar uma vida com você, nadar e me afogar no universo que você é... E que sorte a minha ter encontrado um infinito inteiro onde eu finalmente me sinto em casa.</p>
+      </article>
+
+      <article class="promise">
+        <h3>Do nosso jeitinho...</h3>
+        <p>Prometo rir das suas piadas idiotas e viver nossa vida do nosso jeitinho: esquisito, engraçado e único</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="music-player">
+      <div class="progress" id="progress">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="controls">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward" id="prev"></i>
+        <i class="fa-solid fa-play glow" id="play"></i>
+        <i class="fa-solid fa-forward" id="next"></i>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
+    </div>
+    <div class="credit"><em>Te amo 💛</em></div>
+  </footer>
+
+  <audio id="audio" loop src="assets/music.mp3"></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

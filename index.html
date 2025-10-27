@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Para Você</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Para minha âncora">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html"><em>Para a minha noite estrelada...</em></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">Nossa História</a></li>
+        <li><a href="momentos.html">Momentos</a></li>
+        <li><a href="futuro.html">Futuro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Feliz aniversário, amor</h1>
+        <p><em>Uma pequena parte de nós, traduzidos em momentos e promessas.</em></p>
+        <div class="cta-row">
+          <a href="historia.html" class="btn">Começar a viagem</a>
+          <a href="momentos.html" class="btn ghost">Ver momentos</a>
+        </div>
+      </div>
+      <canvas id="stars"></canvas>
+    </section>
+
+    <section class="intro container">
+      <div class="card">
+        <h2>Por que esse site?</h2>
+        <p> Por que hoje é uma <strong><em>data especial</em></strong>, é o dia que celebra a vida da minha <em>vida</em>, da minha <em>âncora</em>. <br>Aqui não contempla nem sequer 1% da nossa história, nem mesmo um capitulo, mas é a <strong>promessa</strong> de todos os volumes que ainda vamos escrever <em>juntos</em>. É apenas uma página de um livro que <em>eu amaria ler para sempre</em>. <br>Feliz vida, meu amor. </p>
+      </div>
+      <div class="card">
+        <h2>Para você</h2>
+        <p>
+          <p> Eu te amo <strong>infinitamente</strong>. Amo de tantas formas que sequer consigo começar a descrever. </p>
+          <p> Você é a <em>minha escolha</em>, a escolha que eu faço todos os dias, desde a hora que acordo até a hora de deitar. E é a escolha que quero continuar fazendo por todos os dias da minha vida. </p>
+          <p> Nem se eu soubesse todas as línguas, novas e antigas, eu conseguiria traduzir tudo o que sinto. Eu quero viver todas as minhas vidas com você, me afogar no oceano que você é e me perder na imensidão do que somos juntos. </p>
+        </p>
+      </div>
+    </section>
+  </main>
+
+   <footer class="site-footer">
+    <div class="music-player">
+      <div class="progress" id="progress">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="controls">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward" id="prev"></i>
+        <i class="fa-solid fa-play glow" id="play"></i>
+        <i class="fa-solid fa-forward" id="next"></i>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
+    </div>
+    <div class="credit"><em>Te amo 💛</em></div>
+  </footer>
+
+  <audio id="audio" loop src="assets/music/music.mp3"></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
