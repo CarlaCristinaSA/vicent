@@ -504,3 +504,37 @@ canvas#stars {
   0%, 100% { filter: drop-shadow(0 0 2px #f3c64a); }
   50% { filter: drop-shadow(0 0 8px #ffd86b); }
 }
+
+/* --- Correções de contraste para botões/links da seção hero --- */
+.hero a, 
+.hero button {
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escuro translúcido */
+  color: #fff; /* texto claro */
+  padding: 10px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero a:hover, 
+.hero button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* leve sombra no texto hero para legibilidade */
+.hero h1, 
+.hero p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* overlay extra para escurecer levemente o fundo da hero */
+.hero::after {
+  background: linear-gradient(180deg, rgba(3, 6, 15, 0.55), rgba(3, 6, 15, 0.6));
+}
+
